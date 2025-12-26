@@ -47,6 +47,28 @@ const storage = multer.diskStorage({
     }
 });
 const upload = multer({ storage: storage });
+const ADMIN_USER = 'admin';
+const ADMIN_PASS = 'password123';
+
+// Basic Auth Middleware
+const basicAuth = (req, res, next) => {
+    const authHeader = req.headers.authorization;
+    if (!authHeader) {
+        res.setHeader('WWW-Authenticate', 'Basic realm="Admin Panel"');
+        return res.status(401).send('Authentication required');
+    }
+
+    const auth = Buffer.from(authHeader.split(' ')[1], 'base64').toString().split(':');
+    const user = auth[0];
+    const pass = auth[1];
+
+    if (user === ADMIN_USER && pass === ADMIN_PASS) {
+        next();
+    } else {
+        res.setHeader('WWW-Authenticate', 'Basic realm="Admin Panel"');
+        return res.status(401).send('Invalid credentials');
+    }
+};
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -104,8 +126,13 @@ app.get('/api/license/:cnic', (req, res) => {
         });
 });
 
+// Admin page route with Auth
+app.get('/admin.html', basicAuth, (req, res) => {
+    res.sendFile(path.join(__dirname, 'dlims/dlims.punjab.gov.pk/admin.html'));
+});
+
 // API to get all licenses (view data)
-app.get('/api/licenses', (req, res) => {
+app.get('/api/licenses', basicAuth, (req, res) => {
     const results = [];
     fs.createReadStream(dataFile)
         .pipe(csvParser())
@@ -119,7 +146,7 @@ app.get('/api/licenses', (req, res) => {
 });
 
 // API to delete license by CNIC
-app.delete('/api/license/:cnic', (req, res) => {
+app.delete('/api/license/:cnic', basicAuth, (req, res) => {
     const results = [];
     fs.createReadStream(dataFile)
         .pipe(csvParser())
