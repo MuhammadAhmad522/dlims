@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>404 - Page Not Found | DLIMS 2.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="theme/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="theme/assets/css/custom_style.css" rel="stylesheet" />
+    <link href="theme/assets/css/style_dev.css" rel="stylesheet" />
+    <style>
+        .error-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f4f7f6;
+        }
+
+        .error-card {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+
+        .error-code {
+            font-size: 80px;
+            font-weight: 800;
+            color: #1dac52;
+            margin-bottom: 10px;
+        }
+
+        .error-message {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-home {
+            background-color: #1dac52;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn-home:hover {
+            background-color: #158a41;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-container">
+        <div class="error-card">
+            <div class="error-code">404</div>
+            <div class="error-message">Oops! Page Not Found</div>
+            <p class="text-muted mb-4">The page you are looking for might have been removed, had its name changed, or is
+                temporarily unavailable.</p>
+            <a href="index.html" class="btn btn-home">Back to Home</a>
+        </div>
+    </div>
+</body>
+
+</html>

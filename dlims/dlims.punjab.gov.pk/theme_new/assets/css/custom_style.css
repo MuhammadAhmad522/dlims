@@ -1,0 +1,1369 @@
+:root {
+    --light-grey: #F2F2F2;
+    --cs-success: #159F48;
+    --cs-warning: #FCA80F;
+    --cs-light-warning: #FCA80F21;
+    --body-color: #636373;
+    --white: #ffffff;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.btn {
+    height: 40px;
+    font-weight: 600;
+}
+
+.card_bg {
+    background-color: #f6faff;
+    border-radius: 15px;
+    padding: 15px;
+    border: 0;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #1EAC53 #eeeeee;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1EAC53;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+}
+
+.modal-dialog.custom-modal-size {
+    /* width: 600px; */
+}
+
+.modal-dialog.custom-modal-size button.btn-close {
+    position: absolute;
+    right: 30px;
+    background-color: white;
+    z-index: 1;
+    padding: 7px;
+    top: 30px;
+    border-radius: 100%;
+    color: #e6e6e6;
+    font-size: 11px;
+}
+
+.nav-link {
+    color: #222228 !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 12px !important;
+}
+
+.nav-link.active {
+    color: var(--cs-warning) !important;
+}
+
+.nav-link:hover {
+    color: var(--cs-warning) !important;
+}
+
+.btn-light {
+    background-color: var(--light-grey);
+    border-color: var(--light-grey);
+}
+
+.btn-success {
+    background-color: var(--cs-success);
+    border-color: var(--cs-success);
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.rounded {
+    border-radius: 50px !important;
+}
+
+.banner_img {
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    background: #ffffff;
+    /* position: relative;
+    z-index: 1; */
+}
+
+.warning_badge {
+    color: var(--cs-warning);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 12px;
+    background-color: var(--cs-light-warning);
+    letter-spacing: 0.8px;
+    width: fit-content;
+}
+
+.p-relative {
+    position: relative;
+    z-index: 1;
+}
+
+/* top bar  */
+
+.dastak-topbar .dastak-topbar-left {
+    position: relative;
+}
+
+.dastak-topbar .dastak-topbar-left .top-bar-img-animation {
+    position: absolute;
+    left: 0;
+    animation: diagonalMove 20s ease-in-out infinite;
+}
+
+@keyframes diagonalMove {
+    0% {
+        top: 0;
+        right: 0;
+        transform: scale(1);
+    }
+
+    25% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(1.2);
+    }
+
+    50% {
+        top: 100%;
+        right: 100%;
+        transform: translate(100%, -100%) scale(1);
+    }
+
+    75% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(1.2);
+    }
+
+    100% {
+        top: 0;
+        right: 0;
+        transform: scale(1);
+    }
+}
+
+.dastak-topbar .dastak-topbar-right {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    justify-content: flex-end;
+    gap: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+.top-bar-animation {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.dastak-topbar .dastak-topbar-right p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+}
+
+.dastak-topbar .dastak-topbar-right h6 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.dastak-topbar {
+    height: 55px;
+    background: linear-gradient(134deg, #fed230 -50%, #027439 100%);
+    overflow: hidden;
+}
+
+#header {
+    /* background-image: url('../images/main_banner.png'); */
+    background-image: url('../images/background_landing_page2.png');
+    min-height: 100vh;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner_content {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 130px);
+    padding: 30px 0;
+}
+
+.main_title {
+    color: var(--cs-success);
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.main_title_h2 {
+    color: var(--cs-success);
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.main_p {
+    color: var(--body-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.banner_content .dastak_landing_hero_logo {
+    width: 150px;
+}
+
+.banner_content .dastak_landing_hero_powered {
+    width: 250px;
+}
+
+.feature_img {
+    margin-bottom: 32px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.main_title_h4 {
+    color: var(--cs-success);
+}
+
+p {
+    color: var(--body-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-banner p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.main-banner p.hero-one-window {
+    border-left: 1px solid #da8100;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 44px;
+    color: #038b45;
+    opacity: 1;
+    line-height: 30px;
+}
+
+.main-banner p.hero-one-window span {
+    font-weight: 700;
+    font-size: 24px;
+    color: #da8100;
+}
+
+.main-banner .hero-apply-btn {
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    height: 47px;
+    width: 245px;
+}
+
+.new-green-bg,
+.main-banner .new-green-bg {
+    background-image: url('../images/dastak_new_btn_bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 0;
+    background-color: #3d711b;
+}
+
+.features_section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    background-image: url('../images/seo3-sectionbg1.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.about_us_section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    background-image: url('../images/dlims-sectionbg2.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.silent_features_section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+    background-image: url('../images/dlims-sectionbg3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.our_services_section {
+    padding: 50px;
+    background-image: url('../images/dlims-sectionbg5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f6f6f6;
+}
+
+.our_services_section .top-part h4 {
+    font-weight: 400;
+    font-size: 40px;
+    color: #000;
+}
+
+.our_services_section .section-description {
+    font-weight: 400;
+    font-size: 24px;
+    color: #7d7d7d;
+}
+
+.our_services_section .bottom-part-service .bottom-part-service-inner {
+    background: #fbfff8;
+    border: 1px solid #a4ddac;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.our_services_section .bottom-part-service .bottom-part-service-inner h6 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #474a4e;
+}
+
+.counter_wrapper {
+    padding: 32px 32px 16px 32px;
+    background: linear-gradient(180deg, #85C442 0%, #1EAC53 100%);
+    box-shadow: 0px 10px 30px rgba(55, 43, 125, .2);
+    border-radius: 25px;
+    margin-top: 80px;
+}
+
+.number {
+    font-size: 52px;
+    line-height: 52px;
+    color: var(--white);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.number_tag {
+    color: #CDFFD4;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.silent_features_card {
+    background-color: var(--white);
+    padding: 36px 36px;
+    box-shadow: 0px 10px 30px rgba(55, 43, 125, .1);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    min-height: 124px;
+}
+
+.image_wrapper {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #323232;
+    background-color: unset;
+    box-shadow: unset;
+    border-radius: unset;
+}
+
+.accordion-item {
+    border: unset;
+    border-bottom: 1.5px solid #B0B0B080;
+    border-radius: unset;
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.accordion-button:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+.accordion-button {
+    color: #323232 !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.accordion {
+    margin-top: 40px;
+}
+
+.footer_section {
+    /* background-color: #2f8b4f; */
+    padding-top: 250px;
+    padding-bottom: 0px;
+    background-image: url(../images/footer_img.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.footer_section p.web-description {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer_copy {
+    border-top: 1.5px solid #ffffff95;
+}
+
+.copyright {
+    color: var(--white);
+    /* text-align: center; */
+}
+
+.footer_copy_content {
+    padding: 18px 0;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+}
+
+.fixed-top {
+    background-color: var(--white);
+    -webkit-box-shadow: 0 0 0 transparent;
+    opacity: .97;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animated-text {
+    animation: fadeIn 1.5s ease-out;
+}
+
+@media (min-width: 1500px) {
+
+    .banner_content .dastak_landing_hero_logo {
+        width: 200px;
+    }
+
+    .banner_content .dastak_landing_hero_powered {
+        width: 300px;
+    }
+
+    .main-banner p.hero-one-window {
+        font-size: 46px;
+    }
+
+    .main-banner p.hero-one-window span {
+        font-size: 28px;
+    }
+    .main-banner p {
+        font-size: 20px;
+    }    
+}
+
+@media (max-width: 1180px) {
+    .navbar-brand {
+        max-width: 180px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 18px 12px !important;
+    }
+
+    .banner_content .dastak_landing_hero_logo {
+        width: 110px;
+    }
+
+    .banner_content .dastak_landing_hero_powered {
+        width: 190px;
+    }
+
+    .main-banner p.hero-one-window {
+        font-size: 36px;
+    }
+
+    .main-banner p.hero-one-window span {
+        font-size: 20px;
+    }
+    .main-banner p {
+        font-size: 17px;
+    }    
+}
+
+@media (max-width: 992.5px) {
+    .navbar {
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        overflow-y: auto;
+        background-color: #f8f9fa;
+        transition: left 0.3s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .modal-dialog.custom-modal-size {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .footer_section {
+        padding-top: 280px;
+    }
+
+    .our_services_section .bottom-part-service .bottom-part-service-inner {
+        width: 92px;
+        margin-bottom: 30px;
+    }
+
+    .dastak-topbar .dastak-topbar-right h6 {
+        font-size: 12px;
+    }
+
+    .dastak-topbar .dastak-topbar-right p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .modal-dialog.custom-modal-size {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767.5px) {
+    #header {
+        min-height: auto;
+    }
+
+    .banner_content {
+        height: auto;
+        padding: 20px;
+    }
+
+    .features_section {
+        padding-top: 50px;
+    }
+
+    .main_title {
+        font-size: 46px;
+    }
+
+    .main_title_h2 {
+        font-size: 32px;
+    }
+
+    .features_section .pb-5 {
+        padding-bottom: 2rem !important;
+    }
+
+    .about_us_section,
+    .silent_features_section,
+    .our_services_section {
+        padding-top: 50px;
+    }
+
+    .number_warpper {
+        text-align: center;
+    }
+
+    .faq_section .px-5 {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+/* Updated */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.sec_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.sec_title span {
+    display: inline-block;
+    position: relative;
+}
+
+.sec_title span:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    height: 4px;
+    width: 60px;
+    background-color: #FCA80F;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+}
+
+.mcb-wrap-inner_new {
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.labels_area label {
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    padding: 8px 12.5px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 49%;
+}
+
+.d_wrapper {
+    width: 275px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+.user_pic {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user_pic img {
+    width: 100%;
+    border-radius: 50%;
+    height: 104px;
+}
+
+.d_no_area {
+    font-weight: 600;
+    position: absolute;
+    top: 37%;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.15;
+    font-family: 'Roboto', sans-serif;
+}
+
+.d_no {
+    color: #263370;
+    font-size: 12px;
+}
+
+.person_name {
+    font-size: 14px;
+}
+
+.d_info_area {
+    max-width: 210px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    top: 46.5%;
+    left: 21%;
+    font-weight: 600;
+    font-size: 9.5px;
+    text-align: left;
+}
+
+.d_info_area li {
+    width: 50%;
+    float: left;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.d_info_area li:last-child {
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.d_lice_applied {
+    position: absolute;
+    top: 70%;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    font-size: 10px;
+    font-weight: 500;
+    width: 210px;
+    left: 13%;
+    text-transform: uppercase;
+}
+
+.d_lice_applied li {
+    width: 25%;
+    text-align: center;
+    float: left;
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 6px;
+}
+
+.d_lice_applied li img {
+    display: block;
+    width: 30px;
+    margin: 0 auto 3px;
+}
+
+.btn.active {
+    background: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #fff !important
+}
+
+.d_lice_applied li.d_applied img.d_not_applied {
+    display: none;
+}
+
+.d_lice_applied li.d_applied img.d_app {
+    display: block;
+}
+
+.qr_code {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+}
+
+.verify_btn {
+    border: none;
+    height: auto !important;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: 18px
+}
+
+.signature {
+    width: 90px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.information .form-control {
+    height: 48px;
+}
+
+@media print {
+    .card_bg {
+        background-color: transparent;
+    }
+
+    body {
+        margin: 0
+    }
+
+    @page {
+        margin: 0px;
+    }
+
+    .d_no_area {
+        font-size: 14px;
+    }
+
+    .d_info_area {
+        font-size: inherit;
+        max-width: 300px;
+        top: 47.5%
+    }
+
+    .d_wrapper {
+        width: 395px;
+        font-size: 13px;
+    }
+
+    .international .d_wrapper {
+        color: #fff
+    }
+
+    .user_pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .d_no {
+        font-size: 15px;
+    }
+
+    .person_name {
+        font-size: 18px;
+    }
+
+    .d_lice_applied li {
+        font-size: 9px
+    }
+
+    .d_lice_applied li img {
+        width: 40px;
+    }
+
+    .d_lice_applied {
+        top: 70.5%;
+        width: 305px;
+    }
+
+    .user_pic img {
+        height: 150px;
+    }
+
+    .d_info_area li {
+        margin-bottom: 32px;
+    }
+
+    .d_info_area li:last-child {
+        margin-top: 5px
+    }
+
+    .d_lice_applied li {
+        height: 49px;
+    }
+
+    .qr_code {
+        width: 60px;
+        bottom: 30px;
+    }
+
+    .signature {
+        width: 130px;
+        bottom: 35px;
+    }
+
+
+}
+
+/* new payment flow page  */
+.payment-flow-data {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.payment-flow p {
+    margin: 0;
+}
+
+.payment-flow .tab-content {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    background: rgba(247, 249, 255, 0.34);
+    padding: 20px 40px;
+}
+
+.payment-flow .nav-item .nav-link {
+    border-radius: 10px 10px 0 0;
+    height: 65px;
+    padding: 15px 60px !important;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    background: #ffffff;
+    color: #8b95a2 !important;
+    width: 300px;
+}
+
+.payment-flow .nav-item .nav-link:hover,
+.payment-flow .nav-item .nav-link:focus,
+.payment-flow .nav-item .nav-link.active {
+    border: 1px solid #1eac53;
+    background: #1eac53;
+    color: #ffffff !important;
+}
+
+.payment-flow .tab-content p,
+.payment-flow .tab-content h3,
+.payment-flow .tab-content h6 {
+    margin: 0;
+}
+
+.payment-flow .tab-content h6 {
+    color: #8b95a2;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.payment-flow .tab-content h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #252733;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.payment-flow .tab-content p {
+    font-size: 18px;
+    color: #8b95a2;
+}
+
+.payment-flow .tab-content ul {
+    color: #8b95a2;
+}
+
+.payment-flow-data table thead tr th.t-col {
+    width: 210px;
+}
+
+.payment-flow-data table thead tr th {
+    background: #1eac53;
+    color: #ffffff;
+    padding: 15px 5px;
+}
+
+.payment-flow-data table thead tr th:first-child {
+    border-radius: 10px 0 0 0;
+    padding-left: 50px;
+}
+
+.payment-flow-data table thead tr th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.payment-flow-data table tbody,
+.payment-flow-data table tbody tr {
+    position: relative;
+}
+
+.payment-flow-data table tbody tr td {
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 5px;
+}
+
+.payment-flow-data table tbody tr td:first-child {
+    padding-left: 50px;
+}
+
+.payment-flow-data table tbody tr::after {
+    border-bottom: 1px solid #dbdbdb;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+}
+
+.payment-flow-data table tbody tr td svg {
+    width: 30px;
+}
+
+a.btn.btn-reg {
+    border: 1.50px solid #1eac53;
+    border-radius: 50px;
+    width: 295px;
+    height: 50px;
+    background: #d1ffe2;
+    align-content: center;
+    color: #1eac53;
+}
+
+/* home new section  */
+.silent_features_section .tab-content .bottom-btn svg {
+    width: auto;
+}
+
+.silent_features_section .tab-content h3 {
+    font-weight: bold;
+    font-size: 19px;
+    color: #1eac53;
+    margin-bottom: 3px;
+}
+
+.silent_features_section .tab-content h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+}
+
+.silent_features_section .tab-content .btn.btn-hiworks {
+    background: #cef2ee;
+    border-radius: 6px;
+    width: 94px;
+    height: 29px;
+    color: #009d85;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.silent_features_section .tab-content p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b8097;
+}
+
+.silent_features_section .tab-content svg {
+    width: 160px;
+    height: auto;
+}
+
+.step-heading h2 {
+    margin: 0;
+}
+
+.header-btns a.btn {
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+}
+
+.mcb-wrap-inner_new {
+    position: relative;
+}
+
+.alert.alert-danger {
+    position: absolute;
+    width: auto;
+    max-width: 350px;
+    min-width: 350px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+table.table.verify-license-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+table.table.verify-license-table tbody tr td {
+    min-width: fit-content;
+    max-width: max-content;
+}
+
+/* new download page by asad  */
+.main-download-medical {
+    background: #ffffff url('../images/downloads_bg.png') no-repeat;
+    background-position: left;
+}
+
+.download-img-outer {
+    background: #f6faff;
+    border-radius: 43px;
+    padding: 100px;
+}
+
+.medical-form-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: #f4f4f4;
+    border-radius: 18px;
+    width: fit-content;
+    max-width: 380px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-download-icon {
+    background: #fff;
+    border-radius: 18px;
+    padding: 10px;
+}
+
+.medical-form-download:hover p {
+    text-decoration: underline;
+}
+
+a.navbar-brand.dastak_logo img {
+    width: 320px;
+}
+a.navbar-brand img {
+    width: 185px;
+}
+
+
+
+@media screen and (max-width:1550px) {
+    .vh-100-cu {
+        height: calc(100vh + 100px);
+    }
+
+    .header-btns a.btn {
+        padding-right: 12px;
+        padding-left: 12px;
+        font-size: 14px;
+        height: 38px;
+    }
+
+    a.navbar-brand img.img-fluid {
+        width: 115px;
+    }
+
+    .navbar-brand.dastak_logo img {
+        width: 250px !important;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 5px 12px !important;
+    }
+
+    .payment-flow-data table thead tr th {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    .payment-flow-data table tbody tr td {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+
+    .payment-flow-data table thead tr th:first-child,
+    .payment-flow-data table tbody tr td:first-child {
+        padding-left: 30px;
+    }
+
+    a.btn.btn-reg {
+        width: 250px;
+    }
+
+    .payment-flow .tab-content h3 {
+        font-size: 24px;
+    }
+
+    .payment-flow .tab-content h6 {
+        font-size: 18px;
+    }
+
+    .payment-flow .tab-content p {
+        font-size: 16px;
+    }
+
+    .payment-flow .nav-item .nav-link {
+        height: 50px;
+        padding: 10px 40px !important;
+        width: 250px;
+    }
+
+    .mcb-wrap-inner_new {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:1380px) {
+    .header-btns a.btn {
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 5px 5px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .header-btns a.btn {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .silent_features_section .tab-content svg {
+        width: 130px;
+    }
+
+    .silent_features_section .tab-content h2 {
+        font-size: 20px;
+    }
+
+    .silent_features_section .tab-content p {
+        font-size: 14px;
+    }
+
+    .download-img-outer {
+        padding: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-flow .nav-item .nav-link {
+        padding: 15px 20px !important;
+        width: 200px;
+    }
+
+    .silent_features_section .tab-content svg {
+        width: 70px;
+    }
+
+    .silent_features_section .tab-content h3 {
+        font-size: 16px;
+    }
+
+    .silent_features_section .tab-content h2 {
+        font-size: 16px;
+    }
+
+    .silent_features_section .tab-content p {
+        font-size: 14px;
+    }
+
+    .main-download-medical {
+        margin-top: 50px;
+        background: none;
+    }
+
+    .download-img-outer {
+        padding: 50px;
+    }
+    .modal-dialog.custom-modal-size button.btn-close {
+        right: 2px;
+        top: 2px;
+    }    
+}
+
+@media (max-width: 767px) {
+    .payment-flow .nav-item .nav-link {
+        padding: 15px 15px !important;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-toggler.collapsed {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .payment-flow .nav-item .nav-link {
+        padding: 10px !important;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .payment-flow .nav-item .nav-link {
+        height: 65px;
+    }
+
+    #header {
+        background: none;
+    }
+}
+
+.dastak-self-service-mode {
+    width: 330px;
+    padding: 0 20px;
+}

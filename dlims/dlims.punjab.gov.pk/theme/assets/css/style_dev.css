@@ -1,0 +1,228 @@
+.field_error { border:1px solid #C00 !important;}
+.user_dropdown .dropdown-menu[data-bs-popper] {
+    right: 0!important;
+	left:unset !important;
+}
+ .file_upload_btn {
+            display: none;
+        }
+        .image_upload {
+            cursor: pointer;
+        }
+        .img-preview {
+            display: none;
+            height: 100%;
+            width:100%;
+            border: 1px solid #ddd;
+            padding: 3px;
+            obejec-fit:contain;
+            max-height: 350px;
+            object-fit: contain;
+            pointer-events: none;
+        }
+        .delete-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .upload_proofs{
+            position: relative;
+        }
+        .uplaod {
+          
+          border: 2px dashed #999;
+          padding: 5px;
+          overflow: hidden;
+      }
+      .section_title {
+          font-weight: 600;
+          font-size: 18px;
+          margin-bottom: 15px;
+      }
+	  
+	  	.login_area { padding-top: 0% !important; padding-bottom:0% !important;}
+	  
+	  .vehicle_info_custom_checkbox_disable{ background-color:#BFBABA;}
+	  
+	  .amount_category{
+         display: none;
+      }
+      .amount_license{
+         border-radius: 0.625rem;
+         background: #FFF0F0;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+      }
+      .amount_license h3{
+         color: #000;
+         font-size: 1.125rem;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 1.4375rem; /* 127.778% */
+         text-transform: capitalize;  
+         text-align: left;
+      }
+      .amount_license p{
+         color: #000;
+         font-size: 0.75rem;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         padding: 0;
+          margin: 0;
+          text-align: left;
+      }
+      .Total_Amount{
+         border-radius: 0.30881rem;
+         border: 0.824px dashed #FF2F2F;
+         background: #FFE5E5;
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         justify-content: center;
+         align-items: center;
+      }
+      .Total_Amount h3{
+         color: #FF1212;
+         font-size: 1rem;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         margin: 0;
+         padding: 0;
+         
+      }
+      .Total_Amount p{
+         color: #FF1212;
+         font-size: 0.6875rem;
+         font-style: normal;
+         font-weight: 500;
+         line-height: normal;
+         padding: 0;
+         margin: 0;
+      }
+      .main_default .amount_license{
+         border-radius: 0.625rem;
+         background: #F3F3F3;
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;
+      }
+      .main_default .amount_license h3{
+         color: #545454;
+         font-size: 1.125rem;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 1.4375rem; /* 127.778% */
+         text-transform: capitalize;
+         text-align: left;
+      }
+      .main_default .amount_license p{
+         color: #A6A6A6;
+         font-size: 0.75rem;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         padding: 0;
+          margin: 0;
+          text-align: left;   
+      }
+      .main_default .Total_Amount{
+         border-radius: 0.30881rem;
+         border: 0.824px dashed #D8D8D8;
+         background: #EFEFEF;
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+         justify-content: center;
+         align-items: center;
+      }
+      .main_default .Total_Amount h3{
+         color: #D1D1D1;
+         font-size: 1rem;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         margin: 0;
+         padding: 0;
+      }
+      .main_default .Total_Amount p{
+         color: #D1D1D1;
+         font-size: 0.6875rem;
+         font-style: normal;
+         font-weight: 500;
+         line-height: normal;
+         padding: 0;
+         margin: 0;
+      }
+      @media screen and (max-width: 500px){
+         .amount_license h3{
+            font-size: 0.8rem;
+         }
+         .amount_license{
+            flex-direction: column;
+            gap: 10px;
+         }
+      }
+	  
+	  
+	  .Video_Tutorial {
+    border-radius: 0.6875rem;
+    background: #FFE8E8;
+    width: 15.75rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    float: right;
+}
+.Video_Tutorial h3{
+  color: #FF2F2F;
+font-size: 1.3rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.97206rem; /* 143.423% */
+text-transform: capitalize;
+margin: 0;
+padding: 0;
+}.modal-content {
+    background-color: transparent;
+    border: none;
+}
+.footer_main{ text-align:center;}
+/* .footer_main img{width:250px;} */
+/* .footer_main p{
+color: #818181;
+text-align: center;
+font-size: 0.74113rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top:10px;
+} */
+
+
+.footer_outer{ text-align:center; margin-top:10px;}
+.footer_outer img{width:50px;}
+.footer_outer p{
+color: #818181;
+
+text-align: center;
+font-size: 0.74113rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top:5px;
+margin-bottom: 0;
+}
+@media screen and (max-width:1470px) {
+   .footer_outer p{
+      font-size: 10px;
+   }
+   .footer_outer img {
+      width: 50px;
+  }
+}
